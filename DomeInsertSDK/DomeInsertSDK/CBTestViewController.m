@@ -7,13 +7,14 @@
 //
 
 #import "CBTestViewController.h"
-#import "CBinsertScreenSDK.h"
+
 
 @interface CBTestViewController ()
 
 @end
 
 @implementation CBTestViewController
+@synthesize textField = _textField;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -27,7 +28,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    [CBinsertScreenSDK insertScreenSDK];
+    [CBinsertScreenSDK insertScreenSDKView:self.view adDeleage:self];
     // Do any additional setup after loading the view from its nib.
 }
 
@@ -41,5 +42,11 @@
 {
     [CBinsertScreenSDK showInsertScreenSDK];
 }
+
+-(IBAction)biaoqingBut:(id)sender
+{
+    NSLog(@"\U0001f42f _textfield.text%@", _textField.text);
+}
+
 
 @end

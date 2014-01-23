@@ -7,9 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "CBinsertScreenSDK.h"
 
-@interface CBTestViewController : UIViewController
+@interface CBTestViewController : UIViewController<CBInsertScreenDeleage>
 
-- (IBAction)textButton:(id)sender;
+@property (nonatomic,strong) IBOutlet UITextField*  textField;
+
+-(IBAction)textButton:(id)sender;
+
+
+-(IBAction)biaoqingBut:(id)sender;
 
 @end
