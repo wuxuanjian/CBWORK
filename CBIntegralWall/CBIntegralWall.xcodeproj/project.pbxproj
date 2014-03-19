@@ -1,0 +1,804 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		835E3FB618D93DEA002006A3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 835E3FB518D93DEA002006A3 /* Foundation.framework */; };
+		835E3FB818D93DEA002006A3 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 835E3FB718D93DEA002006A3 /* CoreGraphics.framework */; };
+		835E3FBA18D93DEA002006A3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 835E3FB918D93DEA002006A3 /* UIKit.framework */; };
+		835E3FC018D93DEA002006A3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 835E3FBE18D93DEA002006A3 /* InfoPlist.strings */; };
+		835E3FC218D93DEA002006A3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 835E3FC118D93DEA002006A3 /* main.m */; };
+		835E3FC618D93DEA002006A3 /* CBAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 835E3FC518D93DEA002006A3 /* CBAppDelegate.m */; };
+		835E3FC818D93DEA002006A3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 835E3FC718D93DEA002006A3 /* Images.xcassets */; };
+		835E3FCF18D93DEA002006A3 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 835E3FCE18D93DEA002006A3 /* XCTest.framework */; };
+		835E3FD018D93DEA002006A3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 835E3FB518D93DEA002006A3 /* Foundation.framework */; };
+		835E3FD118D93DEA002006A3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 835E3FB918D93DEA002006A3 /* UIKit.framework */; };
+		835E3FF518D93E3D002006A3 /* CBMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 835E3FF318D93E3D002006A3 /* CBMainViewController.m */; };
+		836B6B7118D9622F00B40872 /* CBintegralWallListView.m in Sources */ = {isa = PBXBuildFile; fileRef = 836B6B7018D9622F00B40872 /* CBintegralWallListView.m */; };
+		836B6B7418D964D800B40872 /* CBIntegralWallCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 836B6B7318D964D800B40872 /* CBIntegralWallCell.m */; };
+		836B6B7918D965CD00B40872 /* CBIntegralWallModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 836B6B7818D965CD00B40872 /* CBIntegralWallModel.m */; };
+		836B6B7C18D96FDB00B40872 /* integralwallicon.png in Resources */ = {isa = PBXBuildFile; fileRef = 836B6B7B18D96FDB00B40872 /* integralwallicon.png */; };
+		836B6B8118D979A800B40872 /* CBIntegralWallView.m in Sources */ = {isa = PBXBuildFile; fileRef = 836B6B8018D979A800B40872 /* CBIntegralWallView.m */; };
+		836B6B8718D97AB100B40872 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 835E3FB518D93DEA002006A3 /* Foundation.framework */; };
+		836B6B8C18D97AB100B40872 /* CBIntegralWallList.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 836B6B8B18D97AB100B40872 /* CBIntegralWallList.h */; };
+		836B6B8E18D97AB100B40872 /* CBIntegralWallList.m in Sources */ = {isa = PBXBuildFile; fileRef = 836B6B8D18D97AB100B40872 /* CBIntegralWallList.m */; };
+		836B6B9418D97AB100B40872 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 835E3FCE18D93DEA002006A3 /* XCTest.framework */; };
+		836B6B9518D97AB100B40872 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 835E3FB518D93DEA002006A3 /* Foundation.framework */; };
+		836B6B9618D97AB100B40872 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 835E3FB918D93DEA002006A3 /* UIKit.framework */; };
+		836B6B9918D97AB100B40872 /* libCBIntegralWallList.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 836B6B8618D97AB100B40872 /* libCBIntegralWallList.a */; };
+		836B6BA818D97BED00B40872 /* CBIntegralWallModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 836B6B7818D965CD00B40872 /* CBIntegralWallModel.m */; };
+		836B6BA918D97BED00B40872 /* CBintegralWallListView.m in Sources */ = {isa = PBXBuildFile; fileRef = 836B6B7018D9622F00B40872 /* CBintegralWallListView.m */; };
+		836B6BAA18D97BED00B40872 /* CBIntegralWallCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 836B6B7318D964D800B40872 /* CBIntegralWallCell.m */; };
+		836B6BAB18D97BED00B40872 /* CBIntegralWallView.m in Sources */ = {isa = PBXBuildFile; fileRef = 836B6B8018D979A800B40872 /* CBIntegralWallView.m */; };
+		836B6BAE18D9821B00B40872 /* libCBIntegralWallList.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 836B6BAD18D9821B00B40872 /* libCBIntegralWallList.a */; };
+		8385B5C418D9A70B002E3212 /* CBAdDetailsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8385B5C318D9A70B002E3212 /* CBAdDetailsView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		835E3FD218D93DEA002006A3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 835E3FAA18D93DEA002006A3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 835E3FB118D93DEA002006A3;
+			remoteInfo = CBIntegralWall;
+		};
+		836B6B9718D97AB100B40872 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 835E3FAA18D93DEA002006A3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 836B6B8518D97AB100B40872;
+			remoteInfo = CBIntegralWallList;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		836B6B8418D97AB100B40872 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				836B6B8C18D97AB100B40872 /* CBIntegralWallList.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		835E3FB218D93DEA002006A3 /* CBIntegralWall.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CBIntegralWall.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		835E3FB518D93DEA002006A3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		835E3FB718D93DEA002006A3 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		835E3FB918D93DEA002006A3 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		835E3FBD18D93DEA002006A3 /* CBIntegralWall-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CBIntegralWall-Info.plist"; sourceTree = "<group>"; };
+		835E3FBF18D93DEA002006A3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		835E3FC118D93DEA002006A3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		835E3FC318D93DEA002006A3 /* CBIntegralWall-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CBIntegralWall-Prefix.pch"; sourceTree = "<group>"; };
+		835E3FC418D93DEA002006A3 /* CBAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CBAppDelegate.h; sourceTree = "<group>"; };
+		835E3FC518D93DEA002006A3 /* CBAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CBAppDelegate.m; sourceTree = "<group>"; };
+		835E3FC718D93DEA002006A3 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		835E3FCD18D93DEA002006A3 /* CBIntegralWallTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CBIntegralWallTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		835E3FCE18D93DEA002006A3 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		835E3FF218D93E3D002006A3 /* CBMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBMainViewController.h; sourceTree = "<group>"; };
+		835E3FF318D93E3D002006A3 /* CBMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBMainViewController.m; sourceTree = "<group>"; };
+		836B6B6F18D9622F00B40872 /* CBintegralWallListView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBintegralWallListView.h; sourceTree = "<group>"; };
+		836B6B7018D9622F00B40872 /* CBintegralWallListView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBintegralWallListView.m; sourceTree = "<group>"; };
+		836B6B7218D964D800B40872 /* CBIntegralWallCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBIntegralWallCell.h; sourceTree = "<group>"; };
+		836B6B7318D964D800B40872 /* CBIntegralWallCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBIntegralWallCell.m; sourceTree = "<group>"; };
+		836B6B7718D965CD00B40872 /* CBIntegralWallModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBIntegralWallModel.h; sourceTree = "<group>"; };
+		836B6B7818D965CD00B40872 /* CBIntegralWallModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBIntegralWallModel.m; sourceTree = "<group>"; };
+		836B6B7B18D96FDB00B40872 /* integralwallicon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = integralwallicon.png; sourceTree = "<group>"; };
+		836B6B7E18D9720800B40872 /* CBIntegralWallSysDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CBIntegralWallSysDefine.h; sourceTree = "<group>"; };
+		836B6B7F18D979A800B40872 /* CBIntegralWallView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBIntegralWallView.h; sourceTree = "<group>"; };
+		836B6B8018D979A800B40872 /* CBIntegralWallView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBIntegralWallView.m; sourceTree = "<group>"; };
+		836B6B8618D97AB100B40872 /* libCBIntegralWallList.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libCBIntegralWallList.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		836B6B8A18D97AB100B40872 /* CBIntegralWallList-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CBIntegralWallList-Prefix.pch"; sourceTree = "<group>"; };
+		836B6B8B18D97AB100B40872 /* CBIntegralWallList.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CBIntegralWallList.h; sourceTree = "<group>"; };
+		836B6B8D18D97AB100B40872 /* CBIntegralWallList.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CBIntegralWallList.m; sourceTree = "<group>"; };
+		836B6B9318D97AB100B40872 /* CBIntegralWallListTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CBIntegralWallListTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		836B6BAD18D9821B00B40872 /* libCBIntegralWallList.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libCBIntegralWallList.a; sourceTree = "<group>"; };
+		8385B5C218D9A70B002E3212 /* CBAdDetailsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBAdDetailsView.h; sourceTree = "<group>"; };
+		8385B5C318D9A70B002E3212 /* CBAdDetailsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBAdDetailsView.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		835E3FAF18D93DEA002006A3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				836B6BAE18D9821B00B40872 /* libCBIntegralWallList.a in Frameworks */,
+				835E3FB818D93DEA002006A3 /* CoreGraphics.framework in Frameworks */,
+				835E3FBA18D93DEA002006A3 /* UIKit.framework in Frameworks */,
+				835E3FB618D93DEA002006A3 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		835E3FCA18D93DEA002006A3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				835E3FCF18D93DEA002006A3 /* XCTest.framework in Frameworks */,
+				835E3FD118D93DEA002006A3 /* UIKit.framework in Frameworks */,
+				835E3FD018D93DEA002006A3 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		836B6B8318D97AB100B40872 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				836B6B8718D97AB100B40872 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		836B6B9018D97AB100B40872 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				836B6B9918D97AB100B40872 /* libCBIntegralWallList.a in Frameworks */,
+				836B6B9418D97AB100B40872 /* XCTest.framework in Frameworks */,
+				836B6B9618D97AB100B40872 /* UIKit.framework in Frameworks */,
+				836B6B9518D97AB100B40872 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		835E3FA918D93DEA002006A3 = {
+			isa = PBXGroup;
+			children = (
+				836B6BAC18D9821B00B40872 /* liba */,
+				836B6B7A18D96FDB00B40872 /* CBintegralWallRes */,
+				835E3FF718D941B3002006A3 /* CBintegralWallLib */,
+				835E3FBB18D93DEA002006A3 /* CBIntegralWall */,
+				836B6B8818D97AB100B40872 /* CBIntegralWallList */,
+				835E3FB418D93DEA002006A3 /* Frameworks */,
+				835E3FB318D93DEA002006A3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		835E3FB318D93DEA002006A3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				835E3FB218D93DEA002006A3 /* CBIntegralWall.app */,
+				835E3FCD18D93DEA002006A3 /* CBIntegralWallTests.xctest */,
+				836B6B8618D97AB100B40872 /* libCBIntegralWallList.a */,
+				836B6B9318D97AB100B40872 /* CBIntegralWallListTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		835E3FB418D93DEA002006A3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				835E3FB518D93DEA002006A3 /* Foundation.framework */,
+				835E3FB718D93DEA002006A3 /* CoreGraphics.framework */,
+				835E3FB918D93DEA002006A3 /* UIKit.framework */,
+				835E3FCE18D93DEA002006A3 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		835E3FBB18D93DEA002006A3 /* CBIntegralWall */ = {
+			isa = PBXGroup;
+			children = (
+				835E3FC418D93DEA002006A3 /* CBAppDelegate.h */,
+				835E3FC518D93DEA002006A3 /* CBAppDelegate.m */,
+				835E3FC718D93DEA002006A3 /* Images.xcassets */,
+				835E3FBC18D93DEA002006A3 /* Supporting Files */,
+				835E3FF218D93E3D002006A3 /* CBMainViewController.h */,
+				835E3FF318D93E3D002006A3 /* CBMainViewController.m */,
+			);
+			path = CBIntegralWall;
+			sourceTree = "<group>";
+		};
+		835E3FBC18D93DEA002006A3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				835E3FBD18D93DEA002006A3 /* CBIntegralWall-Info.plist */,
+				835E3FBE18D93DEA002006A3 /* InfoPlist.strings */,
+				835E3FC118D93DEA002006A3 /* main.m */,
+				835E3FC318D93DEA002006A3 /* CBIntegralWall-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		835E3FF718D941B3002006A3 /* CBintegralWallLib */ = {
+			isa = PBXGroup;
+			children = (
+				836B6B7518D9659D00B40872 /* common */,
+				836B6B6718D9570700B40872 /* view */,
+			);
+			path = CBintegralWallLib;
+			sourceTree = "<group>";
+		};
+		836B6B6718D9570700B40872 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				836B6B6E18D959EC00B40872 /* listview */,
+				836B6B6818D9570700B40872 /* cellview */,
+				836B6B6918D9570700B40872 /* detailsview */,
+				836B6B6A18D9570700B40872 /* wallview */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		836B6B6818D9570700B40872 /* cellview */ = {
+			isa = PBXGroup;
+			children = (
+				836B6B7218D964D800B40872 /* CBIntegralWallCell.h */,
+				836B6B7318D964D800B40872 /* CBIntegralWallCell.m */,
+			);
+			path = cellview;
+			sourceTree = "<group>";
+		};
+		836B6B6918D9570700B40872 /* detailsview */ = {
+			isa = PBXGroup;
+			children = (
+				8385B5C218D9A70B002E3212 /* CBAdDetailsView.h */,
+				8385B5C318D9A70B002E3212 /* CBAdDetailsView.m */,
+			);
+			path = detailsview;
+			sourceTree = "<group>";
+		};
+		836B6B6A18D9570700B40872 /* wallview */ = {
+			isa = PBXGroup;
+			children = (
+				836B6B7F18D979A800B40872 /* CBIntegralWallView.h */,
+				836B6B8018D979A800B40872 /* CBIntegralWallView.m */,
+			);
+			path = wallview;
+			sourceTree = "<group>";
+		};
+		836B6B6E18D959EC00B40872 /* listview */ = {
+			isa = PBXGroup;
+			children = (
+				836B6B6F18D9622F00B40872 /* CBintegralWallListView.h */,
+				836B6B7018D9622F00B40872 /* CBintegralWallListView.m */,
+			);
+			path = listview;
+			sourceTree = "<group>";
+		};
+		836B6B7518D9659D00B40872 /* common */ = {
+			isa = PBXGroup;
+			children = (
+				836B6B7D18D971CE00B40872 /* utils */,
+				836B6B7618D965AD00B40872 /* model */,
+			);
+			path = common;
+			sourceTree = "<group>";
+		};
+		836B6B7618D965AD00B40872 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				836B6B7718D965CD00B40872 /* CBIntegralWallModel.h */,
+				836B6B7818D965CD00B40872 /* CBIntegralWallModel.m */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		836B6B7A18D96FDB00B40872 /* CBintegralWallRes */ = {
+			isa = PBXGroup;
+			children = (
+				836B6B7B18D96FDB00B40872 /* integralwallicon.png */,
+			);
+			path = CBintegralWallRes;
+			sourceTree = "<group>";
+		};
+		836B6B7D18D971CE00B40872 /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				836B6B7E18D9720800B40872 /* CBIntegralWallSysDefine.h */,
+			);
+			path = utils;
+			sourceTree = "<group>";
+		};
+		836B6B8818D97AB100B40872 /* CBIntegralWallList */ = {
+			isa = PBXGroup;
+			children = (
+				836B6B8B18D97AB100B40872 /* CBIntegralWallList.h */,
+				836B6B8D18D97AB100B40872 /* CBIntegralWallList.m */,
+				836B6B8918D97AB100B40872 /* Supporting Files */,
+			);
+			path = CBIntegralWallList;
+			sourceTree = "<group>";
+		};
+		836B6B8918D97AB100B40872 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				836B6B8A18D97AB100B40872 /* CBIntegralWallList-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		836B6BAC18D9821B00B40872 /* liba */ = {
+			isa = PBXGroup;
+			children = (
+				836B6BAD18D9821B00B40872 /* libCBIntegralWallList.a */,
+			);
+			path = liba;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		835E3FB118D93DEA002006A3 /* CBIntegralWall */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 835E3FDE18D93DEA002006A3 /* Build configuration list for PBXNativeTarget "CBIntegralWall" */;
+			buildPhases = (
+				835E3FAE18D93DEA002006A3 /* Sources */,
+				835E3FAF18D93DEA002006A3 /* Frameworks */,
+				835E3FB018D93DEA002006A3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CBIntegralWall;
+			productName = CBIntegralWall;
+			productReference = 835E3FB218D93DEA002006A3 /* CBIntegralWall.app */;
+			productType = "com.apple.product-type.application";
+		};
+		835E3FCC18D93DEA002006A3 /* CBIntegralWallTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 835E3FE118D93DEA002006A3 /* Build configuration list for PBXNativeTarget "CBIntegralWallTests" */;
+			buildPhases = (
+				835E3FC918D93DEA002006A3 /* Sources */,
+				835E3FCA18D93DEA002006A3 /* Frameworks */,
+				835E3FCB18D93DEA002006A3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				835E3FD318D93DEA002006A3 /* PBXTargetDependency */,
+			);
+			name = CBIntegralWallTests;
+			productName = CBIntegralWallTests;
+			productReference = 835E3FCD18D93DEA002006A3 /* CBIntegralWallTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		836B6B8518D97AB100B40872 /* CBIntegralWallList */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 836B6BA218D97AB100B40872 /* Build configuration list for PBXNativeTarget "CBIntegralWallList" */;
+			buildPhases = (
+				836B6B8218D97AB100B40872 /* Sources */,
+				836B6B8318D97AB100B40872 /* Frameworks */,
+				836B6B8418D97AB100B40872 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CBIntegralWallList;
+			productName = CBIntegralWallList;
+			productReference = 836B6B8618D97AB100B40872 /* libCBIntegralWallList.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		836B6B9218D97AB100B40872 /* CBIntegralWallListTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 836B6BA518D97AB100B40872 /* Build configuration list for PBXNativeTarget "CBIntegralWallListTests" */;
+			buildPhases = (
+				836B6B8F18D97AB100B40872 /* Sources */,
+				836B6B9018D97AB100B40872 /* Frameworks */,
+				836B6B9118D97AB100B40872 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				836B6B9818D97AB100B40872 /* PBXTargetDependency */,
+			);
+			name = CBIntegralWallListTests;
+			productName = CBIntegralWallListTests;
+			productReference = 836B6B9318D97AB100B40872 /* CBIntegralWallListTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		835E3FAA18D93DEA002006A3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = CB;
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = CB;
+				TargetAttributes = {
+					835E3FCC18D93DEA002006A3 = {
+						TestTargetID = 835E3FB118D93DEA002006A3;
+					};
+					836B6B9218D97AB100B40872 = {
+						TestTargetID = 835E3FB118D93DEA002006A3;
+					};
+				};
+			};
+			buildConfigurationList = 835E3FAD18D93DEA002006A3 /* Build configuration list for PBXProject "CBIntegralWall" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 835E3FA918D93DEA002006A3;
+			productRefGroup = 835E3FB318D93DEA002006A3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				835E3FB118D93DEA002006A3 /* CBIntegralWall */,
+				835E3FCC18D93DEA002006A3 /* CBIntegralWallTests */,
+				836B6B8518D97AB100B40872 /* CBIntegralWallList */,
+				836B6B9218D97AB100B40872 /* CBIntegralWallListTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		835E3FB018D93DEA002006A3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				835E3FC018D93DEA002006A3 /* InfoPlist.strings in Resources */,
+				836B6B7C18D96FDB00B40872 /* integralwallicon.png in Resources */,
+				835E3FC818D93DEA002006A3 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		835E3FCB18D93DEA002006A3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		836B6B9118D97AB100B40872 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		835E3FAE18D93DEA002006A3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				835E3FF518D93E3D002006A3 /* CBMainViewController.m in Sources */,
+				836B6B7918D965CD00B40872 /* CBIntegralWallModel.m in Sources */,
+				836B6B7118D9622F00B40872 /* CBintegralWallListView.m in Sources */,
+				835E3FC218D93DEA002006A3 /* main.m in Sources */,
+				836B6B8118D979A800B40872 /* CBIntegralWallView.m in Sources */,
+				836B6B7418D964D800B40872 /* CBIntegralWallCell.m in Sources */,
+				835E3FC618D93DEA002006A3 /* CBAppDelegate.m in Sources */,
+				8385B5C418D9A70B002E3212 /* CBAdDetailsView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		835E3FC918D93DEA002006A3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		836B6B8218D97AB100B40872 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				836B6BA818D97BED00B40872 /* CBIntegralWallModel.m in Sources */,
+				836B6BA918D97BED00B40872 /* CBintegralWallListView.m in Sources */,
+				836B6BAA18D97BED00B40872 /* CBIntegralWallCell.m in Sources */,
+				836B6BAB18D97BED00B40872 /* CBIntegralWallView.m in Sources */,
+				836B6B8E18D97AB100B40872 /* CBIntegralWallList.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		836B6B8F18D97AB100B40872 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		835E3FD318D93DEA002006A3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 835E3FB118D93DEA002006A3 /* CBIntegralWall */;
+			targetProxy = 835E3FD218D93DEA002006A3 /* PBXContainerItemProxy */;
+		};
+		836B6B9818D97AB100B40872 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 836B6B8518D97AB100B40872 /* CBIntegralWallList */;
+			targetProxy = 836B6B9718D97AB100B40872 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		835E3FBE18D93DEA002006A3 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				835E3FBF18D93DEA002006A3 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		835E3FDC18D93DEA002006A3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		835E3FDD18D93DEA002006A3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		835E3FDF18D93DEA002006A3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CBIntegralWall/CBIntegralWall-Prefix.pch";
+				INFOPLIST_FILE = "CBIntegralWall/CBIntegralWall-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/EinFachMann/Desktop/POJ/CBIntegralWall/liba,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		835E3FE018D93DEA002006A3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CBIntegralWall/CBIntegralWall-Prefix.pch";
+				INFOPLIST_FILE = "CBIntegralWall/CBIntegralWall-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/EinFachMann/Desktop/POJ/CBIntegralWall/liba,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		835E3FE218D93DEA002006A3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/CBIntegralWall.app/CBIntegralWall";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CBIntegralWall/CBIntegralWall-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "CBIntegralWallTests/CBIntegralWallTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		835E3FE318D93DEA002006A3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/CBIntegralWall.app/CBIntegralWall";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CBIntegralWall/CBIntegralWall-Prefix.pch";
+				INFOPLIST_FILE = "CBIntegralWallTests/CBIntegralWallTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+		836B6BA318D97AB100B40872 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				DSTROOT = /tmp/CBIntegralWallList.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CBIntegralWallList/CBIntegralWallList-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		836B6BA418D97AB100B40872 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				DSTROOT = /tmp/CBIntegralWallList.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CBIntegralWallList/CBIntegralWallList-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		836B6BA618D97AB100B40872 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/CBIntegralWall.app/CBIntegralWall";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CBIntegralWallList/CBIntegralWallList-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "CBIntegralWallListTests/CBIntegralWallListTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		836B6BA718D97AB100B40872 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/CBIntegralWall.app/CBIntegralWall";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CBIntegralWallList/CBIntegralWallList-Prefix.pch";
+				INFOPLIST_FILE = "CBIntegralWallListTests/CBIntegralWallListTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		835E3FAD18D93DEA002006A3 /* Build configuration list for PBXProject "CBIntegralWall" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				835E3FDC18D93DEA002006A3 /* Debug */,
+				835E3FDD18D93DEA002006A3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		835E3FDE18D93DEA002006A3 /* Build configuration list for PBXNativeTarget "CBIntegralWall" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				835E3FDF18D93DEA002006A3 /* Debug */,
+				835E3FE018D93DEA002006A3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		835E3FE118D93DEA002006A3 /* Build configuration list for PBXNativeTarget "CBIntegralWallTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				835E3FE218D93DEA002006A3 /* Debug */,
+				835E3FE318D93DEA002006A3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		836B6BA218D97AB100B40872 /* Build configuration list for PBXNativeTarget "CBIntegralWallList" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				836B6BA318D97AB100B40872 /* Debug */,
+				836B6BA418D97AB100B40872 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		836B6BA518D97AB100B40872 /* Build configuration list for PBXNativeTarget "CBIntegralWallListTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				836B6BA618D97AB100B40872 /* Debug */,
+				836B6BA718D97AB100B40872 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 835E3FAA18D93DEA002006A3 /* Project object */;
+}
