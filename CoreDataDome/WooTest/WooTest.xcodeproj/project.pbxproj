@@ -1,0 +1,498 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		835E3F6D18D934A5002006A3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 835E3F6C18D934A5002006A3 /* Foundation.framework */; };
+		835E3F6F18D934A5002006A3 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 835E3F6E18D934A5002006A3 /* CoreGraphics.framework */; };
+		835E3F7118D934A5002006A3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 835E3F7018D934A5002006A3 /* UIKit.framework */; };
+		835E3F7318D934A5002006A3 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 835E3F7218D934A5002006A3 /* CoreData.framework */; };
+		835E3F7918D934A5002006A3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 835E3F7718D934A5002006A3 /* InfoPlist.strings */; };
+		835E3F7B18D934A5002006A3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 835E3F7A18D934A5002006A3 /* main.m */; };
+		835E3F7F18D934A5002006A3 /* CBAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 835E3F7E18D934A5002006A3 /* CBAppDelegate.m */; };
+		835E3F8218D934A5002006A3 /* WooTest.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 835E3F8018D934A5002006A3 /* WooTest.xcdatamodeld */; };
+		835E3F8418D934A5002006A3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 835E3F8318D934A5002006A3 /* Images.xcassets */; };
+		835E3F8B18D934A5002006A3 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 835E3F8A18D934A5002006A3 /* XCTest.framework */; };
+		835E3F8C18D934A5002006A3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 835E3F6C18D934A5002006A3 /* Foundation.framework */; };
+		835E3F8D18D934A5002006A3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 835E3F7018D934A5002006A3 /* UIKit.framework */; };
+		835E3F8E18D934A5002006A3 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 835E3F7218D934A5002006A3 /* CoreData.framework */; };
+		835E3F9618D934A5002006A3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 835E3F9418D934A5002006A3 /* InfoPlist.strings */; };
+		835E3F9818D934A5002006A3 /* WooTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 835E3F9718D934A5002006A3 /* WooTestTests.m */; };
+		835E3FA318D93530002006A3 /* CBEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 835E3FA218D93530002006A3 /* CBEntity.m */; };
+		835E3FA718D935B4002006A3 /* CBMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 835E3FA518D935B4002006A3 /* CBMainViewController.m */; };
+		835E3FA818D935B4002006A3 /* CBMainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 835E3FA618D935B4002006A3 /* CBMainViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		835E3F8F18D934A5002006A3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 835E3F6118D934A5002006A3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 835E3F6818D934A5002006A3;
+			remoteInfo = WooTest;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		835E3F6918D934A5002006A3 /* WooTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WooTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		835E3F6C18D934A5002006A3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		835E3F6E18D934A5002006A3 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		835E3F7018D934A5002006A3 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		835E3F7218D934A5002006A3 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		835E3F7618D934A5002006A3 /* WooTest-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "WooTest-Info.plist"; sourceTree = "<group>"; };
+		835E3F7818D934A5002006A3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		835E3F7A18D934A5002006A3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		835E3F7C18D934A5002006A3 /* WooTest-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WooTest-Prefix.pch"; sourceTree = "<group>"; };
+		835E3F7D18D934A5002006A3 /* CBAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CBAppDelegate.h; sourceTree = "<group>"; };
+		835E3F7E18D934A5002006A3 /* CBAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CBAppDelegate.m; sourceTree = "<group>"; };
+		835E3F8118D934A5002006A3 /* WooTest.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = WooTest.xcdatamodel; sourceTree = "<group>"; };
+		835E3F8318D934A5002006A3 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		835E3F8918D934A5002006A3 /* WooTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WooTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		835E3F8A18D934A5002006A3 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		835E3F9318D934A5002006A3 /* WooTestTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "WooTestTests-Info.plist"; sourceTree = "<group>"; };
+		835E3F9518D934A5002006A3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		835E3F9718D934A5002006A3 /* WooTestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WooTestTests.m; sourceTree = "<group>"; };
+		835E3FA118D93530002006A3 /* CBEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBEntity.h; sourceTree = "<group>"; };
+		835E3FA218D93530002006A3 /* CBEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBEntity.m; sourceTree = "<group>"; };
+		835E3FA418D935B4002006A3 /* CBMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBMainViewController.h; sourceTree = "<group>"; };
+		835E3FA518D935B4002006A3 /* CBMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBMainViewController.m; sourceTree = "<group>"; };
+		835E3FA618D935B4002006A3 /* CBMainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CBMainViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		835E3F6618D934A5002006A3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				835E3F6F18D934A5002006A3 /* CoreGraphics.framework in Frameworks */,
+				835E3F7318D934A5002006A3 /* CoreData.framework in Frameworks */,
+				835E3F7118D934A5002006A3 /* UIKit.framework in Frameworks */,
+				835E3F6D18D934A5002006A3 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		835E3F8618D934A5002006A3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				835E3F8B18D934A5002006A3 /* XCTest.framework in Frameworks */,
+				835E3F8E18D934A5002006A3 /* CoreData.framework in Frameworks */,
+				835E3F8D18D934A5002006A3 /* UIKit.framework in Frameworks */,
+				835E3F8C18D934A5002006A3 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		835E3F6018D934A5002006A3 = {
+			isa = PBXGroup;
+			children = (
+				835E3FA418D935B4002006A3 /* CBMainViewController.h */,
+				835E3FA518D935B4002006A3 /* CBMainViewController.m */,
+				835E3FA618D935B4002006A3 /* CBMainViewController.xib */,
+				835E3F7418D934A5002006A3 /* WooTest */,
+				835E3F9118D934A5002006A3 /* WooTestTests */,
+				835E3F6B18D934A5002006A3 /* Frameworks */,
+				835E3F6A18D934A5002006A3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		835E3F6A18D934A5002006A3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				835E3F6918D934A5002006A3 /* WooTest.app */,
+				835E3F8918D934A5002006A3 /* WooTestTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		835E3F6B18D934A5002006A3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				835E3F6C18D934A5002006A3 /* Foundation.framework */,
+				835E3F6E18D934A5002006A3 /* CoreGraphics.framework */,
+				835E3F7018D934A5002006A3 /* UIKit.framework */,
+				835E3F7218D934A5002006A3 /* CoreData.framework */,
+				835E3F8A18D934A5002006A3 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		835E3F7418D934A5002006A3 /* WooTest */ = {
+			isa = PBXGroup;
+			children = (
+				835E3F7D18D934A5002006A3 /* CBAppDelegate.h */,
+				835E3F7E18D934A5002006A3 /* CBAppDelegate.m */,
+				835E3F8318D934A5002006A3 /* Images.xcassets */,
+				835E3F8018D934A5002006A3 /* WooTest.xcdatamodeld */,
+				835E3FA118D93530002006A3 /* CBEntity.h */,
+				835E3FA218D93530002006A3 /* CBEntity.m */,
+				835E3F7518D934A5002006A3 /* Supporting Files */,
+			);
+			path = WooTest;
+			sourceTree = "<group>";
+		};
+		835E3F7518D934A5002006A3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				835E3F7618D934A5002006A3 /* WooTest-Info.plist */,
+				835E3F7718D934A5002006A3 /* InfoPlist.strings */,
+				835E3F7A18D934A5002006A3 /* main.m */,
+				835E3F7C18D934A5002006A3 /* WooTest-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		835E3F9118D934A5002006A3 /* WooTestTests */ = {
+			isa = PBXGroup;
+			children = (
+				835E3F9718D934A5002006A3 /* WooTestTests.m */,
+				835E3F9218D934A5002006A3 /* Supporting Files */,
+			);
+			path = WooTestTests;
+			sourceTree = "<group>";
+		};
+		835E3F9218D934A5002006A3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				835E3F9318D934A5002006A3 /* WooTestTests-Info.plist */,
+				835E3F9418D934A5002006A3 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		835E3F6818D934A5002006A3 /* WooTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 835E3F9B18D934A5002006A3 /* Build configuration list for PBXNativeTarget "WooTest" */;
+			buildPhases = (
+				835E3F6518D934A5002006A3 /* Sources */,
+				835E3F6618D934A5002006A3 /* Frameworks */,
+				835E3F6718D934A5002006A3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WooTest;
+			productName = WooTest;
+			productReference = 835E3F6918D934A5002006A3 /* WooTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+		835E3F8818D934A5002006A3 /* WooTestTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 835E3F9E18D934A5002006A3 /* Build configuration list for PBXNativeTarget "WooTestTests" */;
+			buildPhases = (
+				835E3F8518D934A5002006A3 /* Sources */,
+				835E3F8618D934A5002006A3 /* Frameworks */,
+				835E3F8718D934A5002006A3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				835E3F9018D934A5002006A3 /* PBXTargetDependency */,
+			);
+			name = WooTestTests;
+			productName = WooTestTests;
+			productReference = 835E3F8918D934A5002006A3 /* WooTestTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		835E3F6118D934A5002006A3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = CB;
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = CB;
+				TargetAttributes = {
+					835E3F8818D934A5002006A3 = {
+						TestTargetID = 835E3F6818D934A5002006A3;
+					};
+				};
+			};
+			buildConfigurationList = 835E3F6418D934A5002006A3 /* Build configuration list for PBXProject "WooTest" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 835E3F6018D934A5002006A3;
+			productRefGroup = 835E3F6A18D934A5002006A3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				835E3F6818D934A5002006A3 /* WooTest */,
+				835E3F8818D934A5002006A3 /* WooTestTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		835E3F6718D934A5002006A3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				835E3F7918D934A5002006A3 /* InfoPlist.strings in Resources */,
+				835E3FA818D935B4002006A3 /* CBMainViewController.xib in Resources */,
+				835E3F8418D934A5002006A3 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		835E3F8718D934A5002006A3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				835E3F9618D934A5002006A3 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		835E3F6518D934A5002006A3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				835E3FA718D935B4002006A3 /* CBMainViewController.m in Sources */,
+				835E3F7B18D934A5002006A3 /* main.m in Sources */,
+				835E3F7F18D934A5002006A3 /* CBAppDelegate.m in Sources */,
+				835E3F8218D934A5002006A3 /* WooTest.xcdatamodeld in Sources */,
+				835E3FA318D93530002006A3 /* CBEntity.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		835E3F8518D934A5002006A3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				835E3F9818D934A5002006A3 /* WooTestTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		835E3F9018D934A5002006A3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 835E3F6818D934A5002006A3 /* WooTest */;
+			targetProxy = 835E3F8F18D934A5002006A3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		835E3F7718D934A5002006A3 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				835E3F7818D934A5002006A3 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		835E3F9418D934A5002006A3 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				835E3F9518D934A5002006A3 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		835E3F9918D934A5002006A3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		835E3F9A18D934A5002006A3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		835E3F9C18D934A5002006A3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WooTest/WooTest-Prefix.pch";
+				INFOPLIST_FILE = "WooTest/WooTest-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		835E3F9D18D934A5002006A3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WooTest/WooTest-Prefix.pch";
+				INFOPLIST_FILE = "WooTest/WooTest-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		835E3F9F18D934A5002006A3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/WooTest.app/WooTest";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WooTest/WooTest-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "WooTestTests/WooTestTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		835E3FA018D934A5002006A3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/WooTest.app/WooTest";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WooTest/WooTest-Prefix.pch";
+				INFOPLIST_FILE = "WooTestTests/WooTestTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		835E3F6418D934A5002006A3 /* Build configuration list for PBXProject "WooTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				835E3F9918D934A5002006A3 /* Debug */,
+				835E3F9A18D934A5002006A3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		835E3F9B18D934A5002006A3 /* Build configuration list for PBXNativeTarget "WooTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				835E3F9C18D934A5002006A3 /* Debug */,
+				835E3F9D18D934A5002006A3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		835E3F9E18D934A5002006A3 /* Build configuration list for PBXNativeTarget "WooTestTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				835E3F9F18D934A5002006A3 /* Debug */,
+				835E3FA018D934A5002006A3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		835E3F8018D934A5002006A3 /* WooTest.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				835E3F8118D934A5002006A3 /* WooTest.xcdatamodel */,
+			);
+			currentVersion = 835E3F8118D934A5002006A3 /* WooTest.xcdatamodel */;
+			path = WooTest.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 835E3F6118D934A5002006A3 /* Project object */;
+}

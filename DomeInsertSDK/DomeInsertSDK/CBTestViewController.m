@@ -49,4 +49,30 @@
 }
 
 
+//--------------------------------
+//获取广告数据成功
+-(void) loadDateInsertScreenAD
+{
+    NSLog(@"获取广告数据成功");
+}
+
+//显示广告
+-(void) showInsertScreenAD
+{
+    NSLog(@"显示广告");
+}
+
+//点击广告
+-(void) clickInsertScreenAD
+{
+    NSLog(@"点击广告");
+}
+
+//关闭广告
+-(void) closeInsertScreenAD
+{
+    NSLog(@"关闭广告");
+}
+//-------------------------------
+
 @end
