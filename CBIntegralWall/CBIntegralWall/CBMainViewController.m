@@ -43,7 +43,7 @@
 
 -(void)buttonpageselector
 {
-    [CBIntegralWallList addAdListView];
+    [CBIntegralWallList shareWallList];
 }
 
 @end

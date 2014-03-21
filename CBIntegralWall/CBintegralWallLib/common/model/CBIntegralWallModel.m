@@ -7,6 +7,7 @@
 //
 
 #import "CBIntegralWallModel.h"
+#import "SvIncrementallyImage.h"
 
 @implementation CBIntegralWallModel
 @synthesize adId = _adId;            //广告id
@@ -20,6 +21,8 @@
 @synthesize adPackegName = _adPackegName;    //广告包名
 @synthesize adVertisers = _adVertisers;     //广告商
 @synthesize adFeedbackUrl = _adFeedbackUrl;   //广告下载反馈url
+
+@synthesize svincrementallyImage = _svincrementallyImage;
 
 -(id) init
 {
@@ -36,8 +39,17 @@
         _adPackegName = @"";
         _adVertisers = @"";
         _adFeedbackUrl = @"";
+        _svincrementallyImage = nil;
     }
     return self;
+}
+
+-(void) setAdIconUrl:(NSString *)iconUrl
+{
+    _adIconUrl = iconUrl;
+    NSURL *url = [[NSURL alloc] initWithString:iconUrl];
+    _svincrementallyImage = [[SvIncrementallyImage alloc] initWithURL:url];
+    
 }
 
 @end

@@ -11,7 +11,8 @@
 
 @interface CBintegralWallListView : UIView <UITableViewDataSource,UITableViewDelegate>
 
-@property (nonatomic,strong) UITableView* listTableView;
+@property (nonatomic) CGRect            sonViewForm;
+
 @property (nonatomic,strong) NSMutableArray* listDataArray;
 
 

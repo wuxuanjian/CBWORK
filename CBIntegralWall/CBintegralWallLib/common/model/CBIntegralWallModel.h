@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 #import "CBIntegralWallSysDefine.h"
 
+@class SvIncrementallyImage;
 @interface CBIntegralWallModel : NSObject
 
 @property (nonatomic,strong) NSString* adId;            //广告id
@@ -22,5 +23,9 @@
 @property (nonatomic,strong) NSString* adPackegName;    //广告包名
 @property (nonatomic,strong) NSString* adVertisers;     //广告商
 @property (nonatomic,strong) NSString* adFeedbackUrl;   //广告下载反馈url
+
+
+@property (nonatomic,strong) SvIncrementallyImage *svincrementallyImage; //图片
+
 
 @end

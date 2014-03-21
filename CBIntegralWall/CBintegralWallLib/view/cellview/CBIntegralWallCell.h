@@ -10,9 +10,14 @@
 #import "CBIntegralWallModel.h"
 #import "CBIntegralWallSysDefine.h"
 
+@class SvIncrementallyImage;
 @interface CBIntegralWallCell : UITableViewCell
 
--(void) showIntegralWall:(CBIntegralWallModel*)mode;
+@property (nonatomic,strong) SvIncrementallyImage *svincrementallyImage;
+@property (nonatomic,strong) UIImageView* iconImageView;
+@property (nonatomic,strong) NSTimer* iconTimer;
+
+-(void) showIntegralWall:(CBIntegralWallModel*)mode cellWidth:(CGFloat)width;
 
 
 @end

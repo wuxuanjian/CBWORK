@@ -12,8 +12,11 @@
 
 @interface CBIntegralWallView : UIView
 
-@property (nonatomic,strong) CBintegralWallListView* integralWallListView;
+@property (nonatomic,readwrite) BOOL screenAnimated;
 
--(void) showIntegralWallView;
+//屏幕旋转监听
+-(void) notificationCenter;
+
+- (void)deviceOrientationDidChange:(NSNotification *)notification;
 
 @end
