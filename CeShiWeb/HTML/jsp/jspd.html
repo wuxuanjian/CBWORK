@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function myFunction()
+{
+	var answer='Yes I am!';
+
+	if(document.getElementById("demo").innerHTML == "My First JavaScript Function")
+	{
+		document.getElementById("demo").innerHTML="My First JavaScript Function1" + "<br>" + "woxuan " + answer;
+	}
+	else
+	{
+		document.getElementById("demo").innerHTML="My First JavaScript Function";
+	}
+}
+</script>
+
+</head>
+
+<body>
+
+<h1>My Web Page</h1>
+
+<p id="demo">A Paragraph.</p>
+
+<button type="button" onclick="myFunction()">点击</button>
+
+</body>
+</html>

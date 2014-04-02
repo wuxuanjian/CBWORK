@@ -1,0 +1,38 @@
+@charset "UTF-8";
+/* CSS Document */
+/*段落样式*/
+p
+{
+	color: purple;
+	font-size: 12px;
+}
+
+/*标题样式*/
+h1:ha
+{
+	color: olive;
+	text-decoration: underline;
+}
+
+/*链接样式*/
+a:link
+{
+	color:#006486;
+}
+a:visited
+{ 
+	color:#464646;
+}
+a:hover 
+{ 
+	color: #fff;
+	background: #3080CB;
+}
+a:active 
+{ 
+	color:white;
+	background: #3080CB ;
+}
+
+
+
