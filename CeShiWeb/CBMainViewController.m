@@ -43,7 +43,7 @@
     {
         NSString *documentPath = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex: 0];
         
-        dbPath = [documentPath stringByAppendingPathComponent: [NSString stringWithFormat:@"HTML/test1/%@.%@",@"test", @"html"]];
+        dbPath = [documentPath stringByAppendingPathComponent: [NSString stringWithFormat:@"HTML/%@.%@",@"index", @"html"]];
         
         NSLog(@"dbPath = %@", dbPath);
     }
